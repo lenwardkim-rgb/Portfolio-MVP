@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="TJ Portfolio">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#89b4fa"/>
+      <stop offset="100%" stop-color="#cba6f7"/>
+    </linearGradient>
+  </defs>
+  <!-- Catppuccin crust -->
+  <rect width="512" height="512" rx="112" fill="#11111b"/>
+  <rect x="40" y="40" width="432" height="432" rx="88" fill="none" stroke="#313244" stroke-width="6"/>
+  <!-- Monospace-style TJ -->
+  <text
+    x="256"
+    y="318"
+    text-anchor="middle"
+    font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace"
+    font-size="168"
+    font-weight="700"
+    fill="#cdd6f4"
+    letter-spacing="-8"
+  >TJ</text>
+  <!-- Terminal prompt + cursor bar (mauve / blue) -->
+  <text
+    x="132"
+    y="388"
+    font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace"
+    font-size="56"
+    font-weight="600"
+    fill="url(#accent)"
+  >&gt;</text>
+  <rect x="192" y="352" width="188" height="14" rx="4" fill="#cba6f7" opacity="0.92"/>
+</svg>
