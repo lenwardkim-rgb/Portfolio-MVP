@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-catppuccin-base: #1e1e2e;
+  --color-catppuccin-mantle: #181825;
+  --color-catppuccin-crust: #11111b;
+  --color-catppuccin-text: #cdd6f4;
+  --color-catppuccin-subtext: #a6adc8;
+  --color-catppuccin-blue: #89b4fa;
+  --color-catppuccin-mauve: #cba6f7;
+  --color-catppuccin-red: #f38ba8;
+  --color-catppuccin-green: #a6e3a1;
+  --color-catppuccin-yellow: #f9e2af;
+  --color-catppuccin-surface0: #313244;
+}
+
+@layer base {
+  body {
+    @apply bg-catppuccin-crust text-catppuccin-text font-mono overflow-hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-catppuccin-crust;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-catppuccin-surface0 rounded-full transition-colors;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-catppuccin-mauve;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #313244 #11111b;
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-catppuccin-surface0/50;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-catppuccin-mauve/50;
+  }
+}
